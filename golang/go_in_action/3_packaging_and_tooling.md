@@ -39,4 +39,6 @@ import (
 
 ### init function
 
-package 目录下，每个文件最多一个，每个都会执行
+package 目录下，每个文件最都可以有，每个都会执行, 执行顺序不定
+
+如果 A 包 引用了 B 包
