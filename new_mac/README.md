@@ -46,8 +46,7 @@ $brew services start mysql
 ### php 配置
 
 ```bash
-$cd /usr/local/etc/php/7.4/fpm/pool.x
-$vim www.conf
+$vim /usr/local/etc/php/7.4/php-fpm.d/www.conf
 // listen = 127.0.0.1:9074
 // user = myName (用户名)
 // group = staff
