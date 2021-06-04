@@ -62,11 +62,24 @@ $vim nginx
 
 
 
-###
+### 杂项
+
+```bash
+$pecl install redis
+
+```
 
 ## phpmyadmin
 
-```
+```bash
+$mkdir -p ~/web/default
+$cd ~/web/default/
+# 建立 phpinfo
+# <?php phpinfo();
+$vim index.php
 $wget https://files.phpmyadmin.net/phpMyAdmin/5.1.1/phpMyAdmin-5.1.1-all-languages.tar.gz
+$tar zxf phpMyAdmin-5.1.1-all-languages.tar.gz
+## 改名，然后访问 http://localhost/pma
+$mv phpMyAdmin-5.1.1-all-languages pma
 
 ```
