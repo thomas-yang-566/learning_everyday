@@ -40,12 +40,17 @@ $brew install redis
 $brew services
 $brew services start redis
 $brew services start mysql
-
+## 确认 php 版本
+$php version
+$redis-cli
+## 输入 info server
 ```
 
 ### php 配置
 
 ```bash
+## 安装 redis 扩展
+$pecl install redis
 $vim /usr/local/etc/php/7.4/php-fpm.d/www.conf
 // listen = 127.0.0.1:9074
 // user = myName (用户名)
@@ -65,8 +70,16 @@ $vim nginx
 ### 杂项
 
 ```bash
-$pecl install redis
+$
 
+## composer
+$mkdir ~/temp
+$cd ~/temp
+## 安装 composer
+$php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+$sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+## 安装好之后验证一下
+$composer version
 ```
 
 ## phpmyadmin
