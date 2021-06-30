@@ -1,7 +1,6 @@
 # 学习如何零基础开发开发比特币
 
-Programming Bitcoin
-Learn How to Program Bitcoin from Scratch
+Programming Bitcoin - Learn How to Program Bitcoin from Scratch
 
 https://hk1lib.org/book/3711976/c3dc50
 
@@ -22,4 +21,4 @@ https://hk1lib.org/book/3711976/c3dc50
 11. 简化支付验证(simplified Payment Verification)
 12. 布隆过滤器( bloom filters )
 13. Segwit
-14.  Advanced Topics and Next Steps
+14. Advanced Topics and Next Steps
