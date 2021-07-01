@@ -48,6 +48,11 @@ mqtt.max_packet_size = 1MB
 |secure websocket listener|8084|MQTT/WSS protocol port|
 
 
+## dashboard / 控制面板
+
+http://ip:18083
+
+
 
 redis
 
