@@ -26,4 +26,15 @@ config
 auth.redis.pool = 8
 auth.redis.database = 0
 auth.redis.password =
+
+auth.redis
+
+```
+
+## load emqx_auth_redis
+
+```bash
+$emqx_ctl plugins load emqx_auth_redis
+$redis-cli hset mqtt_user:test password 123456
+$redis-cli hset mqtt_acl:test 
 ```
