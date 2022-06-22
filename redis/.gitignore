@@ -1,0 +1,4 @@
+nodes.conf
+nohup.out
+dump.rdb
+*/appendonlydir/*
