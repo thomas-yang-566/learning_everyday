@@ -174,6 +174,7 @@ Options:
  -V,--show-version                      Display version information
                                         WITHOUT stopping build
  -X,--debug                             Produce execution debug output
+ ```
 
 ## 参考
 
