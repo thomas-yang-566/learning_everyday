@@ -13,14 +13,14 @@ Type=simple
 User=nobody
 Restart=on-failure
 RestartSec=5s
-ExecStart=/usr/local/frp_0.54.0_linux_amd64/frps -c /usr/local/frp_0.54.0_linux_amd64/frps.toml
+ExecStart=/usr/local/frp_0.56.0_linux_amd64/frps -c /usr/local/frp_0.56.0_linux_amd64/frps.toml
 [Install]
 WantedBy=multi-user.target
 
 
 ```
 
-vim /usr/local/frp_0.54.0_linux_amd64/frps.toml
+vim /usr/local/frp_0.56.0_linux_amd64/frps.toml
 
 ```text
 bindPort = 7090

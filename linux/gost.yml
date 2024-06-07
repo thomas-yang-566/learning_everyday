@@ -1,0 +1,22 @@
+# test
+services:
+  - name: 'service-cdn1'
+    addr: ':8445'
+    listener:
+      type: 'tcp'
+    handler:
+      type: 'ss'
+      auth:
+        username: 'aes-256-gcm'
+        password: 'w0rd2019'
+    chains:
+      - name: 'chain-0'
+        hops:
+          - name: 'hop-0'
+            addr: 'cdn1.4cdn.xyz:8445'
+            username: 'aes-256-gcm'
+            password: 'w0rd2019'
+            connector:
+              type: 'relay'
+            dialer:
+              type: 'wss'

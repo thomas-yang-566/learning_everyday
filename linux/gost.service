@@ -1,0 +1,41 @@
+# test
+## yum install telnet nload -y
+## wget https://521github.com/ginuerzh/gost/releases/download/v2.11.5/gost-linux-amd64-2.11.5.gz
+
+## wget http://172.104.61.139/gost-linux-amd64-2.11.5 -O /usr/local/bin/gost
+##dmit wget http://103.135.249.13/gost-linux-amd64-2.11.5 -O /usr/local/bin/gost
+## test(aws) wget http://13.125.95.179/gost-linux-amd64-2.11.5 -O /usr/local/bin/gost
+## wget http://94.103.4.41/gost-linux-amd64-2.11.5 -O /usr/local/bin/gost
+## wget http://dmit2.4cdn.xyz/gost-linux-amd64-2.11.5 -O /usr/local/bin/gost
+## chmod +x /usr/local/bin/gost
+## wget http://172.104.61.139/gost.service -O /etc/systemd/system/gost.service
+## vim /etc/systemd/system/gost.service
+## systemctl enable --now gost
+## telnet localhost 8445
+## systemctl daemon-reload
+##
+## bwg
+## gost -
+##nohup gost -L ss://aes-256-gcm:w0rd2019@:8001 -F relay+wss://jack:w0rd2019@cdn1.4cdn.xyz:8445 > 8001 &
+## 芜湖 60.169.41.94 / 60.169.41.77 / 60.169.41.85, 220.178.184.209
+## 220.178.185.253
+##nohup gost -L ss://aes-256-gcm:w0rd2019@:8003 -F relay+wss://jack:w0rd2019@220.178.184.209:8445 > 8003.log 2>&1 &
+## 徐州 106.110.106.41, 106.110.106.41
+##nohup gost -L ss://aes-256-gcm:w0rd2019@:8004 -F relay+wss://jack:w0rd2019@106.110.106.41:8445 > 8004.log 2>&1 &
+## 杭州 115.195.94.45
+##nohup gost -L ss://aes-256-gcm:w0rd2019@:8005 -F relay+wss://jack:w0rd2019@115.195.94.45:8445 > 8005.log 2>&1 &
+##nohup gost -L ss://aes-256-gcm:w0rd2019@:9001 -F relay+wss://jack:w0rd2019@36.6.145.130:8445 > 9001.log 2>&1 &
+[Unit]
+Description=GO Simple Tunnel
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/gost -L relay+wss://jack:w0rd2019@:8445
+## ExecStart=/usr/local/bin/gost -L ss://aes-256-gcm:w0rd2019@:9007
+## ExecStart=/usr/local/bin/gost -C /etc/gost/gost.yml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
