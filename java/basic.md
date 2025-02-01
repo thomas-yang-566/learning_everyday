@@ -1,3 +1,21 @@
+## install/安装
+
+install java
+
+1. install https://www.tutorials24x7.com/java/how-to-install-java-17-on-mac
+2. switch https://www.tutorials24x7.com/java/how-to-switch-java-version-on-mac
+
+结果
+
+```bash
+java -version
+java version "17.0.12" 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+```
+
+
+
 ## 内容
 
 0. 程序入口 public class / public static void main(String[] args){}

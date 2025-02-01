@@ -85,6 +85,7 @@ $mvn wrawpper:wrapper
 1. deploy 部署
 1. clean 清除中间产生的临时文件，比如一下jar文件
 1. site 产生 site 文档
+1. dependency:get 下载依赖
 
 ## phases
 
