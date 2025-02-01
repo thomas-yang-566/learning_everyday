@@ -55,46 +55,7 @@ $dart compile exe main.dart -o bin/hello
 $./bin/hello
 ```
 
-## 变量
 
-`https://dart.dev/language/variables`
-type safe 
-var 自动推断, late 消除 runtime errors/ lazy init
-
-```dart
-var name1 = 'Bob';
-String name2 = 'Bob_too';
-
-int? age = 12; // nullable 
-```
-
-late/ 2 lazy
-
-```dart
-// This is the program's only call to readThermometer().
-// 如果没有用到 temerature, readThermometer 就不会被调用
-late String temperature = readThermometer(); // Lazily initialized.
-```
-
-## 运算
-
-https://dart.dev/language/operators
-
-1. unary postfix(单目后运算符) ++/ --
-2. unary prefix(弹幕前运算符)
-3. 乘法 * / % ~/
-4. 加法 + -
-5. 位移 << / >> , >>>
-6. 位运算 和(&) , XOR (^), OR(|)
-7. 关系运算符 == != > < >= <=
-8. 类型 as is , is!
-9. 逻辑运算符 并且&&,或 || , if-null ??
-10. 三元运算符 expr1 ? expr2 : expr3
-11. 
-
-```dart
-
-```
 
 ## 控制流
 
@@ -153,14 +114,7 @@ int fibonacci(int n) {
 }
 ```
 
-## 注释
 
-```dart
-// TODO 这
-/*
- 这也是
-*/
-```
 
 ## import 引入
 
