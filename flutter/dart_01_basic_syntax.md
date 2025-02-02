@@ -1,3 +1,28 @@
+## keywords 关键字
+
+59个
+```text
+abstract , as , assert, async await
+base, break
+case, catch, class , const, continue, covariant
+default, deferred, do, dynamic
+else, enum, export, extends, extension, external
+factory, false, final, finally, for, Function
+get
+hide
+if, implements, import, in, interface, is
+late, library
+mixin, new, null
+of, on, operator
+part
+required, rethrow, return
+sealed, set, show, static, super, switch, sync
+this, throw, true, try, type typedef
+var void, 
+when, with, while
+yield
+```
+
 ## 变量和常量
 
 `https://dart.dev/language/variables`
@@ -104,9 +129,24 @@ void doSomething() {
 ## libraries & import 引用和库
 
 `https://dart.dev/language/libraries`
-```dart
 
+import 'URI';
+```dart
+// 三种形式
 import 'dart:math'; // core libraries 核心库
 import 'package:test/test.dart'; // external package 外部包
 import 'path/to/other_file.dart'; // 引用文件
+import 'path/to/helper.dart' as lib; // 如果 helper.dart里类名和其他引用的有冲突,引用文件
+
+// 部分引用
+// Import only foo. 
+import 'package:lib1/lib1.dart' show foo;
+
+// Import all names EXCEPT foo.
+import 'package:lib2/lib2.dart' hide foo;
+// lazy import
+import 'package:greetings/hello.dart' deferred as hello;
+
 ```
+
+如何创建自己的库 `https://dart.dev/tools/pub/create-packages`
