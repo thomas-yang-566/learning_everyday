@@ -17,3 +17,9 @@ supervised learning: 需要人工标记
 ## 2 chatgpt apis
 
 https://platform.openai.com/docs/guides/chat
+
+
+
+## RAG 零基础入门：如何用 RAG (检索增强生成) 打造知识库 QA 系统
+
+https://github.com/rag-web-ui/rag-web-ui/tree/main/docs/tutorial
